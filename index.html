@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Project | NFT preview card component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="src/output.css">
+  <link rel="stylesheet" href="src/input.css">
+</head>
+<body>
+
+  <section class="w-full h-screen flex items-center justify-center flex-col bg-bg-very-dark-blue">
+
+    <main class="w-auto max-w-[350px] p-6 rounded-2xl bg-card-very-dark-blue ml-4 mr-4">
+
+      <div class="relative rounded-lg cursor-pointer group">
+
+        <img class="rounded-lg" src="images/image-equilibrium.jpg" alt="image-equilibrium">
+
+        <div class="absolute inset-0 rounded-lg flex items-center justify-center">
+          <div class="absolute inset-0 rounded-lg bg-cyan opacity-0 group-hover:opacity-60"></div>
+          <img class="w-[60px] h-[60px] z-10 opacity-0 group-hover:opacity-100" src="images/icon-view.svg" alt="">
+        </div>
+
+      </div>  
+
+      <header>
+        <h2 class="text-2xl py-4 font-[600] text-white cursor-pointer hover:text-cyan">Equilibrium #3429</h2>
+        <p class="text-lg text-soft-blue font-[300]">Our Equilibrium collection promotes balance and calm.</p>
+      </header>
+
+      <div class="flex justify-between py-4 border-b-2 border-line-very-dark-blue">
+
+        <div class="flex items-center">
+          <img class="w-[12px] h-[20px]" src="images/icon-ethereum.svg">
+          <p class="pl-2 text-cyan font-[400]">0.041 ETH</p>
+        </div>
+
+        <div class="flex items-center">
+          <img class="w-[20px] h-[20px]" src="images/icon-clock.svg" alt="">
+          <p class="pl-2 font-[300] text-soft-blue">3 days left</p>
+        </div>
+
+      </div>
+
+      <footer class="flex pt-4 items-center">
+          
+        <img class="w-[40px] h-[40px] bg-white rounded-full border-2" src="images/image-avatar.png" alt="">
+        <p class="text-soft-blue font-[300] pl-4">Creation of <span class="text-white cursor-pointer hover:text-cyan">Jules Wyvern</span></p>
+
+      </footer>
+
+    </main>
+
+  </section>
+
+</body>
+</html>
